@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-16">
+	<meta name="description" content="Prueba integral HTML-CSS-JS">
+	<!-- Palabras clave para motores de búsquedad -->
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Bryan Piedra. Bryan Baque">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Venta de Pulpa de Frutas</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../Recursos/Img/logo.png" alt="Logo"></img>
+            </a>
+            <div class="navbar-burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="../Pages/nosotros.html">Sobre Nosotros</a>
+                <a class="navbar-item" href="../Pages/productos.html">Productos</a>
+                <a class="navbar-item" href="../Pages/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+	<!-- Main Section -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Compra de productos</h1>
+            <div class="columns">
+                <!-- Lista de Productos -->
+                <div class="column is-half">
+                    <div class="box">
+                        <h2 class="subtitle">Nuestros Productos</h2>
+                        <div class="content">
+                            <ul>
+                                <li> Pimiento - $2.00</li>
+                                <li> frutilla - $2.50</li>
+                                <li> Papa - $2.00</li>
+                                <li>Tomate - $3.00</li>
+                                <li>Mora- $3.00</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de Pedido -->
+                <div class="column is-half">
+                    <div class="box">
+                        <h2 class="subtitle">Realiza tu Pedido</h2>
+                        <form id="orderForm">
+                            <div class="field">
+                                <label class="label">Nombre</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Tu nombre" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Correo Electrónico</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="Tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Producto</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select required>
+                                            <option value="">Selecciona un producto</option>
+                                            <option value="mango">Pimiento</option>
+                                            <option value="fresa"> Fresa</option>
+                                            <option value="piña">Tomate</option>
+                                            <option value="mora"> Mora</option>
+                                            <option value="mora"> Papa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Cantidad</label>
+                                <div class="control">
+                                    <input class="input" type="number" placeholder="Cantidad" min="1" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">Enviar Pedido</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="orderMessage" class="notification is-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>

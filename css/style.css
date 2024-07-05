@@ -1,0 +1,42 @@
+/* Estilos personalizados */
+
+
+.hero-background-contact {
+    background-image: url('images/hero-contact.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .title,
+.hero .subtitle {
+    color: rgb(10, 223, 205);
+}
+
+.section {
+    padding: 3rem 1.5rem;
+}
+
+.input, .textarea {
+    border-radius: 4px;
+}
+
+.button.is-primary {
+    background-color: #2b2c2c;
+    border-color: transparent;
+    color: white;
+}
+
+.button.is-primary:hover {
+    background-color: #1e1f1e;
+}
+
+.button.is-light {
+    border-color: #080808;
+    color: #07e777;
+}
+
+.button.is-light:hover {
+    border-color: #111010;
+}
